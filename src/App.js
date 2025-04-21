@@ -1,17 +1,16 @@
-import './App.css';
-import Header from './components/Header';
+import Hero from './components/Hero';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Header />
+    <div>    
       <Nav />
+      <Hero />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,21 +1,55 @@
-import Logo from '../assets/Logo.svg'
+import React, { useState } from 'react';
+import Logo from '../assets/Logo.svg';
 
 const Nav = () => {
-    return (
-        <>
-            <nav>
-                <img src={Logo} alt="Logo de Little Lemon" />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Reservations</a></li>
-                    <li><a href="#">Order Online</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </nav>
-        </>
-    )
-}
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default Nav
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
+        <header className="bg-gray-100 py-4">
+            <nav className="container mx-auto flex justify-between items-center px-4">
+                {/* Logo */}
+                <a href="/" className="flex-shrink-0">
+                    <img src={Logo} alt="Logo de Little Lemon" className="h-12" />
+                </a>
+
+                {/* Botón de menú hamburguesa */}
+                <button
+                    onClick={toggleMenu}
+                    className="text-2xl md:hidden focus:outline-none"
+                >
+                    ☰
+                </button>
+
+                {/* Navegación */}
+                <section
+                    className={`${
+                        isMenuOpen ? 'fixed' : 'hidden'
+                    } top-0 left-0 w-full h-full z-50 bg-white flex flex-col items-center justify-center md:bg-transparent md:static md:flex md:flex-row md:items-center md:justify-end md:gap-6`}
+                >
+                    {/* Botón de cerrar */}
+                    <button
+                        onClick={toggleMenu}
+                        className="absolute top-4 right-4 text-3xl focus:outline-none md:hidden"
+                    >
+                        ✖
+                    </button>
+
+                    <ul className="list-none space-y-6 md:space-y-0 md:flex md:gap-6">
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Home</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">About</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Menu</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Reservations</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Order Online</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Login</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+    );
+};
+
+export default Nav;
