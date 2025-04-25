@@ -9,14 +9,13 @@ const Nav = () => {
     };
 
     return (
-        <header className="bg-gray-100 py-4">
-            <nav className="container mx-auto flex justify-between items-center px-4">
+        <header className="bg-gray-100 md:py-4 py-0">
+            <nav className="container mx-auto flex justify-between items-center px-4 fixed md:relative z-50 bg-gray-100 shadow-md md:shadow-none py-4">
                 {/* Logo */}
                 <a href="/" className="flex-shrink-0">
                     <img src={Logo} alt="Logo de Little Lemon" className="h-12" />
                 </a>
 
-                {/* Botón de menú hamburguesa */}
                 <button
                     onClick={toggleMenu}
                     className="text-2xl md:hidden focus:outline-none"
@@ -24,13 +23,11 @@ const Nav = () => {
                     ☰
                 </button>
 
-                {/* Navegación */}
                 <section
                     className={`${
                         isMenuOpen ? 'fixed' : 'hidden'
                     } top-0 left-0 w-full h-full z-50 bg-white flex flex-col items-center justify-center md:bg-transparent md:static md:flex md:flex-row md:items-center md:justify-end md:gap-6`}
                 >
-                    {/* Botón de cerrar */}
                     <button
                         onClick={toggleMenu}
                         className="absolute top-4 right-4 text-3xl focus:outline-none md:hidden"

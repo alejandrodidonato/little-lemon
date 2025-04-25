@@ -1,16 +1,17 @@
-import Hero from './components/Hero';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import Home from './components/Home';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>    
+    <Router>    
       <Nav />
-      <Hero />
-      <Main />
+      <Routes> 
+          <Route path="/" element={<Home/>}></Route>
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
