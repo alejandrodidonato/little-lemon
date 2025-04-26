@@ -36,12 +36,12 @@ const Nav = () => {
                     </button>
 
                     <ul className="list-none space-y-6 md:space-y-0 md:flex md:gap-6">
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Home</a></li>
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">About</a></li>
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Menu</a></li>
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Reservations</a></li>
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Order Online</a></li>
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-base">Login</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Home</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">About</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Menu</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Reservations</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Order Online</a></li>
+                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Login</a></li>
                     </ul>
                 </section>
             </nav>
