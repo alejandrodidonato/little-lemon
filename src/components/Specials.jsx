@@ -8,7 +8,7 @@ const Specials = () => {
         <>
         <section>
             <section className='container mx-auto flex flex-col md:flex-row items-center justify-between py-8 px-4'>
-                    <section className="w-1/2 text-center md:text-left md:max-w-lg">
+                    <section className="w-1/2 text-center md:text-left md:max-w-lg pb-8 md:pb-0">
                         <h2 className='text-3xl md:text-6xl mb-2 text-[#495E57]'>Specials</h2>
                     </section>
                     <section className='w-full md:w-1/2 flex md:justify-end justify-center md:mb-0'>

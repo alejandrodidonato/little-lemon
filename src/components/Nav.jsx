@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo.svg';
 
 const Nav = () => {
@@ -12,9 +13,9 @@ const Nav = () => {
         <header className="bg-gray-100 md:py-4 py-0">
             <nav className="container mx-auto flex justify-between items-center px-4 fixed md:relative z-50 bg-gray-100 shadow-md md:shadow-none py-4">
                 {/* Logo */}
-                <a href="/" className="flex-shrink-0">
+                <Link to="/" className="flex-shrink-0">
                     <img src={Logo} alt="Logo de Little Lemon" className="h-12" />
-                </a>
+                </Link>
 
                 <button
                     onClick={toggleMenu}
@@ -36,10 +37,10 @@ const Nav = () => {
                     </button>
 
                     <ul className="list-none space-y-6 md:space-y-0 md:flex md:gap-6">
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Home</a></li>
+                        <li><Link to="/" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Home</Link></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">About</a></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Menu</a></li>
-                        <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Reservations</a></li>
+                        <li><Link to="/booking" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Reservations</Link></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Order Online</a></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600 text-xl md:text-xl">Login</a></li>
                     </ul>

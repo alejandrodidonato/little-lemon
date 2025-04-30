@@ -13,3 +13,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Markazi Text', sans-serif;
 }
+
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+  color: #495E57;
+}
+
+input[type=number]:focus, input[type=date]:focus, select:focus {
+  outline: none;
+}
+
+input[type=number]::placeholder {
+  color: #495E57;
+}
+
+select,
+option {
+  background-color: white;
+}

@@ -4,7 +4,7 @@ const Testimonials = () => {
     return (
         <>
         <section>
-            <section className='container mx-auto flex flex-col md:flex-row items-center text-center py-8 px-4'>
+            <section className='container mx-auto flex flex-col md:flex-row items-center text-center md:py-8 px-4'>
                     <h2 className='mx-auto text-3xl md:text-6xl mb-2 text-[#495E57] text-center'>Testimonials</h2>
             </section>
             <section className='container mx-auto flex flex-col md:flex-row items-center justify-between py-8 px-4'>

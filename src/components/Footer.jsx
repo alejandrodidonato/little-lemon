@@ -11,7 +11,7 @@ const Footer = () => {
 
                 {/* Columna 2: Navegación principal */}
                 <nav aria-label="Primary Navigation" className="w-full md:w-1/4 text-center my-8 md:my-0">
-                    <h5 className="font-bold mb-4 text-2xl">Doormat Navigation</h5>
+                    <h5 className="font-bold mb-4 text-2xl text-[#495E57]">Doormat Navigation</h5>
                     <ul className="list-none space-y-2">
                         <li><a href="#" className="text-gray-800 hover:text-gray-600">Home</a></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600">About</a></li>
@@ -24,7 +24,7 @@ const Footer = () => {
 
                 {/* Columna 3: Contacto */}
                 <nav aria-label="Secondary Navigation" className="w-full md:w-1/4 text-center my-8 md:my-0">
-                    <h5 className="font-bold mb-4 text-2xl">Contact</h5>
+                    <h5 className="font-bold mb-4 text-2xl text-[#495E57]">Contact</h5>
                     <ul className="list-none space-y-2">
                         <li><a href="#" className="text-gray-800 hover:text-gray-600">Address</a></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600">Phone Number</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
 
                 {/* Columna 4: Redes sociales */}
                 <nav aria-label="Social Media Links" className="w-full md:w-1/4 text-center my-8 md:my-0">
-                    <h5 className="font-bold mb-4 text-2xl">Social Media Links</h5>
+                    <h5 className="font-bold mb-4 text-2xl text-[#495E57]">Social Media Links</h5>
                     <ul className="list-none space-y-2">
                         <li><a href="#" className="text-gray-800 hover:text-gray-600">Facebook</a></li>
                         <li><a href="#" className="text-gray-800 hover:text-gray-600">Twitter</a></li>
